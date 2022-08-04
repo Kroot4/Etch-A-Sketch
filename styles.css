@@ -1,0 +1,23 @@
+:root {
+	margin: 0;
+	text-align: center;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	--columns-row: 16;
+	
+}
+
+.container {
+	display: grid;
+	height: 500px;
+	width:  500px;
+	border: solid black;
+	grid-template-columns: repeat(var(--columns-row), 1fr);
+	grid-template-rows: repeat(var(--columns-row), 1fr);
+	overflow:  scroll;
+
+}
+
